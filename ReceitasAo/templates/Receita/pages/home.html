@@ -1,16 +1,15 @@
-{% include "Receita/partials/header.html" %}
+{% include "Receita/partials/head.html" %}
 <body>
+    {% include "Receita/partials/header.html" %}
 
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a class="main-titulo" href="/">
-                    <i class="fas fa-utensils"></i>
-                    <span>Receitas</span>
-                </a>
-            </h1>
+    <div class="search-container">
+        <div class="container">
+            <form action="/" class="Form-input">
+                <input type="search" class="search-input"name="search" id="">
+                <button class="search-button"> <i class="fas fa-search"> </i></button>
+            </form>
         </div>
-    </header>
+    </div>
     
 </body>
 </html>
