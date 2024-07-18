@@ -1,10 +1,5 @@
-{% include "Receita/partials/head.html" %}
-<body>
-    {% include "Receita/partials/header.html" %}
-    {%include "Receita/partials/search.html"%}
-
-
-    <main class="main-content-container">
+{% extends "global/base.html" %}
+{% block content %}
         <div class="main-content main-content-list container">
             {% include "Receita/partials/Container.html" %}
             {% include "Receita/partials/Container.html" %}
@@ -13,12 +8,4 @@
             {% include "Receita/partials/Container.html" %}
             {% include "Receita/partials/Container.html" %}
           </div>
-    </main>
-
-    <footer class="main-footer">
-        {% include "Receita/partials/footer.html" %}
-      </footer>
-
-    
-</body>
-</html>
+{% endblock content %}

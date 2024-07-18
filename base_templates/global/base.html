@@ -1,5 +1,24 @@
 
 
+{% include "Receita/partials/head.html" %}
+<body>
+    {% include "Receita/partials/header.html" %}
+    {%include "Receita/partials/search.html"%}
+
+
+    <main class="main-content-container">
+        {% block content %}{% endblock content %}
+        {% block contente %}{% endblock contente %}
+    </main>
+
+    <footer class="main-footer">
+        {% include "Receita/partials/footer.html" %}
+      </footer>
+
+    
+</body>
+</html>
+
 
 
 
