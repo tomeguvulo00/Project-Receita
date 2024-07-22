@@ -8,7 +8,9 @@ fake = Faker('pt_PT')
 
 def make_recipe():
     
-    return {'title': fake.sentence(nb_words=6),
+    return {
+        'id':fake.random_number(digits=2, fix_len=True),
+        'title': fake.sentence(nb_words=6),
            'description': fake.sentence(nb_words=12),
            'preparation_time': fake.random_number(digits=2, fix_len=True),
            'preparation_time_unit': 'Minutos',
